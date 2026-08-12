@@ -5,7 +5,7 @@ plugins {
 android {
     namespace = "com.example.weatherapp"
     compileSdk {
-        version = release(36) {
+        version = release(37) {
             minorApiLevel = 1
         }
     }
@@ -42,4 +42,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
+    implementation("androidx.cardview:cardview:1.0.0")
 }
