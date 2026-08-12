@@ -4,6 +4,7 @@ object WeatherUtils {
 
     fun getWeatherCondition(code: Int?): String {
         return when (code) {
+
             0 -> "Clear Sky"
 
             1 -> "Mainly Clear"

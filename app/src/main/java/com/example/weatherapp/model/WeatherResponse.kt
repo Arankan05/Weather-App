@@ -9,6 +9,7 @@ data class WeatherResponse(
 
 data class CurrentWeather(
     val time: String?,
+    val interval: Int?,
     val temperature_2m: Double?,
     val relative_humidity_2m: Int?,
     val weather_code: Int?,
