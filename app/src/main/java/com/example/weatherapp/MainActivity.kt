@@ -118,8 +118,8 @@ class MainActivity : AppCompatActivity() {
         tvCity.text = cityName
         tvTemperature.text = String.format(Locale.getDefault(), "%.1f°C", temp ?: 0.0)
         tvCondition.text = WeatherUtils.getWeatherCondition(conditionCode)
-        tvHumidity.text = "Humidity: ${humidity ?: 0}%"
-        tvWindSpeed.text = "Wind Speed: ${windSpeed ?: 0.0} km/h"
+        tvHumidity.text = "${humidity ?: 0}%"
+        tvWindSpeed.text = "${windSpeed ?: 0.0} km/h"
 
         weatherCard.visibility = View.VISIBLE
         tvMessage.visibility = View.GONE
